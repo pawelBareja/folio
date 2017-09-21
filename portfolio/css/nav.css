@@ -1,0 +1,95 @@
+/* colors 
+#C40CAA -red violet
+#CE418C- pink violet
+#F6BF37- orange
+#7286A0 - light slate gray
+#EEB4B3 -melon
+*/
+html,
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444444;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 84px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+a {
+  font-size: 24px;
+  color: #ffffff;
+}
+/* ---------------menu side-----------------------*/
+.menu-side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+.menu-side:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 90px;
+  height: 100%;
+  left: 260px;
+  top: 0;
+  background-color: #fff;
+  -ms-transform: skewX(7deg);
+  /* IE 9  */
+  -webkit-transform: skewX(7deg);
+  /* Safari */
+  transform: skewX(7deg);
+  /* Standard syntax */
+}
+.menu-side ul {
+  position: absolute;
+  padding: 0;
+  bottom: 50%;
+  left: 40px;
+}
+.menu-side ul li {
+  list-style-type: none;
+}
+.menu-side ul li a {
+  font-size: 44px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #444444;
+}
+.menu-side ul li a:hover {
+  color: #CE418C;
+}
+.menu-side h1 a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 50px 40px;
+  font-size: 84px;
+  color: #444444;
+  text-decoration: none;
+}
+.menu-side h1 a:hover {
+  color: 'Roboto Slab', serif;
+  cursor: pointer;
+}
+.menu-side h1 a span {
+  display: block;
+  font-size: 24px;
+  color: #444444;
+}
+@media (max-width: 992px) {
+  .menu-side {
+    display: none;
+  }
+}

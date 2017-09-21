@@ -1,0 +1,77 @@
+@import 'typography';
+@import 'mixins';
+
+/* ---------------menu side-----------------------*/
+.menu-side {
+	position:fixed;
+	top:0;
+	left:0;
+	width:300px;
+	height:100%;
+	background-color:#fff;
+	z-index:10;
+	
+	&:after{ 
+		position: absolute;
+		content: '';
+		display: block;
+		width: 90px;
+		height: 100%;
+		left: 260px;
+		top: 0;
+		background-color:#fff;
+		.rotate(7deg)
+	}
+		ul{
+			position:absolute;
+			padding:0;
+			bottom:50%;
+			left:40px;
+			
+			
+			li {
+				list-style-type:none;
+				
+			
+				a {
+					font-size:@font-size + 20;
+					line-height:@font-size + 20;
+					text-decoration:none;
+					color:@font-color;
+					
+						&:hover {color:#CE418C;}
+				}
+			
+			}
+		
+		}
+		
+		h1 {
+		
+			a{
+				position:absolute;
+				bottom:0;
+				left:0;
+				margin:0 0 50px 40px;
+				font-size:@font-size + 60;
+				color:@font-color;
+				text-decoration:none;
+				
+					&:hover{
+						color:@font-secondary;
+						cursor:pointer;
+					}
+		
+				span {
+					display:block;
+					font-size:@font-size;
+					color:@font-color;
+					
+				}
+			}
+		}	
+	@media (max-width:992px) {
+		display:none;
+	
+	}
+}
