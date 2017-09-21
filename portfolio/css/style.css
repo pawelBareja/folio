@@ -26,6 +26,80 @@ a {
   font-size: 24px;
   color: #ffffff;
 }
+/* ---------------navbar-----------------------*/
+nav {
+  display: none;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  nav {
+    display: block;
+  }
+}
+nav h1 {
+  font-size: 44px;
+  color: #444444;
+  margin: 0;
+}
+nav h1 span {
+  display: block;
+  font-size: 20px;
+  /*font-size 24pc , 3,5 razy różnicy */
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  float: right;
+  list-style-type: none;
+}
+@media (max-width: 780px) {
+  nav ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 50px 0;
+    z-index: 30;
+    height: 300px;
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 0 5px 5px #444;
+  }
+}
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    line-height: 30px;
+  }
+}
+nav ul li a {
+  color: #444444;
+}
+nav ul li a:hover {
+  color: #ce418c;
+  text-decoration: none;
+}
+nav #btn-menu {
+  display: none;
+}
+@media (max-width: 780px) {
+  nav #btn-menu {
+    display: block;
+    line-height: 100px;
+    paddin: 10px 30px;
+    float: right;
+    cursor: pointer;
+  }
+}
+.active {
+  display: block;
+}
 /* ---------------menu side-----------------------*/
 .menu-side {
   position: fixed;
@@ -107,7 +181,7 @@ a {
 .img-container {
   position: relative;
   text-align: right;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 .img-container:after {
   content: '';

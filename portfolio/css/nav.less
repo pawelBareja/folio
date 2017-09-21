@@ -1,6 +1,88 @@
 @import 'typography';
 @import 'mixins';
 
+/* ---------------navbar-----------------------*/
+
+nav {
+
+	@media(max-width: 992px) {
+		display:block;
+	}
+	display:none;
+	height:100px;
+	
+	h1 {
+		font-size:@font-size + 20;
+		color:@font-color;
+		margin:0;
+		
+		span {
+			display:block;
+			font-size:@font-size - 4; /*font-size 24pc , 3,5 razy różnicy */
+		}
+	}
+	
+	ul {
+		margin:0;
+		padding:0;
+		height:100px;
+		float:right;
+		list-style-type:none;
+
+			@media (max-width:780px){
+					position:absolute;
+					top:100px;
+					left:0;
+					padding:50px 0;
+					z-index:30;
+					height:300px;
+					width:100%;
+					background-color: @color-secondary;
+					display:none;
+					box-shadow: 0 5px 5px #444;
+				}		
+
+		li { 
+			display:inline-block;
+			line-height:100px;
+			padding:10px 30px;
+			
+				@media (max-width:768px){
+					display:block;
+					line-height:30px;
+				}
+		
+			a {
+				color:@font-color;
+				
+				&:hover {
+					color:@color-main;
+					text-decoration:none;
+				}
+			}
+		
+		}
+	}
+	
+	#btn-menu {
+		display:none;
+		
+		@media (max-width: 780px){
+			display:block;
+			line-height:100px;
+			paddin:10px 30px;
+			float:right;
+			cursor:pointer;
+		}
+	}
+			
+}
+
+.active {
+	display:block;
+}
+
+
 /* ---------------menu side-----------------------*/
 .menu-side {
 	position:fixed;
@@ -75,3 +157,5 @@
 	
 	}
 }
+
+

@@ -39,9 +39,30 @@
 	
 	<!-- Hide site from indexation-->	 
 	<meta name="robots" content = "noindex, nofollow">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
+
+<!-------navbar-------------------------------------->
+	<nav class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<a class="navbar-brand" href="#"><h1>bareja<span>paweł</span></h1></a> 
+			</div>
+			<div class="col-md-8">
+				<ul id="mobile-menu">
+					<li><a href="omnie.html">o mnie</a></li>
+					<li><a href="portfolio.html">portfolio</a></li>
+					<li><a href="technologie.html">technologie</a></li>
+					<li><a href="kontakt.html">kontakt</a></li>
+				</ul>
+				<div id="btn-menu">menu</div>
+			</div>
+		</div>			
+	</nav>
 
 <!------------------side menu------------------------>	 
 	<section class="container">
@@ -76,7 +97,7 @@
 			</div>
 		</div>	
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-12 col-sm-6">
 				<div class="img-container">
 					<img class="img-responsive" src="img/technologie.jpg" alt="">
 					<div class="img-caption">
@@ -85,7 +106,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-12 col-sm-6">
 				<div class="img-container">
 					<img class="img-responsive" src="img/omnie.jpg" alt="">
 					<div class="img-caption" id="caption3">
@@ -99,17 +120,36 @@
 	</section>
 		
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>	
+<script src="bootstrap/js/bootstrap.js"></script>
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+	var button = document.getElementById('btn-menu');
 
+	button.addEventListener('click', toggle);
+	
+	function toggle(){
+		var menu = document.getElementById('mobile-menu');
+	
+		if (menu.style.display === "none") {
+		menu.style.display = "block";
+		} else {
+		menu.style.display = "none";
+		}
+	}
+			
+  });
+  
 
-
-
-
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>	
-	<script src="bootstrap/js/bootstrap.js"></script>
+  
+  
+  
+  
+  
+  
+</script>	
 
 </body>
 </html>
