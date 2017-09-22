@@ -1,23 +1,18 @@
-jQuery(document).ready(function() {
-    jQuery('.burger-menu').click(function(e) {
-        jQuery('.main-nav').toggleClass('visible');
-		
-		jQuery('.bar1').toggleClass('change1');
-		jQuery('.bar2').toggleClass('change2');
-		jQuery('.bar3').toggleClass('change3');
- 
-        e.preventDefault();
-    });
-});	
-
-
-
-
-jQuery(document).ready(function() {
-    jQuery('.dropdown').click(function(e) {
-        jQuery('.list-menu').toggle();
-
- 
-        e.preventDefault();
-    });
-});	
+/* mobile menu*/
+  document.addEventListener("DOMContentLoaded", function(event) {
+	var button = document.getElementById('btn-menu');
+	
+	button.addEventListener('click', toggle);
+	
+	function toggle(event){
+		var menu = document.getElementById('mobile-menu');
+	
+		if (menu.style.display === "none") {
+		menu.style.display = "block";
+		} else {
+		menu.style.display = "none";
+		}
+	}
+			
+  });
+  

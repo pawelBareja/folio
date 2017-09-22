@@ -2,6 +2,7 @@
 @import 'typography';
 @import 'nav';
 @import 'mixins';
+@import 'footer';
 
 /*----------------------------main content with lef side space for side menu-----------------------------*/
 .content-main {
@@ -10,8 +11,30 @@
 	
 	@media (max-width:992px) {
 		margin:0;
-	}
+	}	
 }
+
+.sub-page-content {
+	height:100%;
+	padding:0 5% 0 10%;
+	margin-left:300px;
+	background-color:lighten(@color-main, 40%);
+	z-index:-10;
+
+	@media (max-width:992px) {
+		margin-left:0;
+		text-align:left;
+		padding:50px 5% 0 5%;
+		
+		h1 {
+			font-size:@font-size + 20;
+			line-height:@font-size + 20;	
+		}
+
+	}
+	
+}
+
 
 /*----------filter on image-----------------*/
 .img-container {
@@ -62,6 +85,7 @@
 }
 
 #caption1, #caption3 {width:600px;}
+
 
 
 

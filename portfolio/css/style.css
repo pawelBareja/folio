@@ -18,9 +18,13 @@ h1 {
   font-weight: 900;
 }
 h2 {
+  font-size: 34px;
+  line-height: 34px;
+}
+p {
   font-size: 24px;
   line-height: 24px;
-  color: #fff;
+  color: #444444;
 }
 a {
   font-size: 24px;
@@ -34,6 +38,27 @@ nav {
 @media (max-width: 992px) {
   nav {
     display: block;
+  }
+}
+nav:after {
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  -ms-transform: skewY(-3deg);
+  /* IE 9  */
+  -webkit-transform: skewY(-3deg);
+  /* Safari */
+  transform: skewY(-3deg);
+  /* Standard syntax */
+  z-index: 10;
+}
+@media (max-width: 780px) {
+  nav:after {
+    background-color: transparent;
   }
 }
 nav h1 {
@@ -67,9 +92,14 @@ nav ul {
     box-shadow: 0 5px 5px #444;
   }
 }
+@media (max-width: 260px) {
+  nav ul {
+    top: 120px;
+  }
+}
 nav ul li {
   display: inline-block;
-  line-height: 100px;
+  line-height: 60px;
   padding: 10px 30px;
 }
 @media (max-width: 768px) {
@@ -84,6 +114,8 @@ nav ul li a {
 nav ul li a:hover {
   color: #ce418c;
   text-decoration: none;
+  text-shadow: #ffffff -1px 0px 2px;
+  -webkit-font-smoothing: antialiased;
 }
 nav #btn-menu {
   display: none;
@@ -97,8 +129,11 @@ nav #btn-menu {
     cursor: pointer;
   }
 }
-.active {
-  display: block;
+@media (max-width: 260px) {
+  nav #btn-menu {
+    float: right;
+    clear: both;
+  }
 }
 /* ---------------menu side-----------------------*/
 .menu-side {
@@ -143,6 +178,8 @@ nav #btn-menu {
 }
 .menu-side ul li a:hover {
   color: #CE418C;
+  text-shadow: #ffffff -1px 0px 2px;
+  -webkit-font-smoothing: antialiased;
 }
 .menu-side h1 a {
   position: absolute;
@@ -167,6 +204,20 @@ nav #btn-menu {
     display: none;
   }
 }
+.active a {
+  color: #e392bd !important;
+}
+.footer {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.footer a {
+  color: #444444;
+  font-size: 44px;
+}
+.footer p {
+  text-align: center;
+}
 /*----------------------------main content with lef side space for side menu-----------------------------*/
 .content-main {
   padding: 0;
@@ -175,6 +226,24 @@ nav #btn-menu {
 @media (max-width: 992px) {
   .content-main {
     margin: 0;
+  }
+}
+.sub-page-content {
+  height: 100%;
+  padding: 0 5% 0 10%;
+  margin-left: 300px;
+  background-color: #f8e3ee;
+  z-index: -10;
+}
+@media (max-width: 992px) {
+  .sub-page-content {
+    margin-left: 0;
+    text-align: left;
+    padding: 50px 5% 0 5%;
+  }
+  .sub-page-content h1 {
+    font-size: 44px;
+    line-height: 44px;
   }
 }
 /*----------filter on image-----------------*/
