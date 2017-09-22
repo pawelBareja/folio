@@ -20,6 +20,21 @@
 	margin-left:300px;
 	background-color:lighten(@color-main, 40%);
 	z-index:-10;
+		
+		h2{
+		
+			a {
+				color:inherit;
+				font-size:inherit;
+				line-height:inherit;
+				text-decoration:none;
+				
+				&:hover {
+					color:@color-main;
+				}
+			
+			}
+		}
 
 	@media (max-width:992px) {
 		margin-left:0;
@@ -35,6 +50,9 @@
 	
 }
 
+.text-hidden {
+	display:none;
+}
 
 /*----------filter on image-----------------*/
 .img-container {
@@ -46,7 +64,6 @@
     content:'';
     top: 0;
     left: 0;
-    z-index: 10;
     width: 100%;
     height: 100%;
     display: block;
@@ -87,6 +104,62 @@
 #caption1, #caption3 {width:600px;}
 
 
+/*--------------graphics--------------*/
+.margin-top {
+	margin-top:50px;
+}
 
+.graphic-container {
+	border:solid 5px lighten(@color-main, 40%);
+	background-color:@color-secondary;
+	padding:20px;
+	
+	/*
+	.skewX(7deg);
+	img {.skewX(-7deg);}
+	p{.skewX(-7deg);}
 
+	@media (max-width:992px){
+	.skewX(0deg);
+	img {.skewX(0deg);}	
+	p {.skewX(0deg);}
+	*/
+	
+}
 
+#read-more {
+	cursor:pointer;
+	font-style:italic;
+}
+
+.portfolio-container {
+	.graphic-container;
+	padding-top:0;
+	overflow:hidden;
+	
+
+	img {
+		margin:20px 0;
+	}
+
+}
+
+.commercial {
+
+	&:after {
+		content:'commercial';
+		font-size:@font-size - 10;
+		color:@color-secondary;
+		line-height:30px;
+		padding-left:20px;
+		top: 0;
+		left: -20px;
+		width:150px;
+		height:30px;;
+		display:block;
+		position:absolute;
+		background:@color-main;
+		transform:rotate(-30deg);
+		}
+
+}

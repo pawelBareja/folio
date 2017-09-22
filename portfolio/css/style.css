@@ -235,6 +235,15 @@ nav #btn-menu {
   background-color: #f8e3ee;
   z-index: -10;
 }
+.sub-page-content h2 a {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+.sub-page-content h2 a:hover {
+  color: #ce418c;
+}
 @media (max-width: 992px) {
   .sub-page-content {
     margin-left: 0;
@@ -246,6 +255,9 @@ nav #btn-menu {
     line-height: 44px;
   }
 }
+.text-hidden {
+  display: none;
+}
 /*----------filter on image-----------------*/
 .img-container {
   position: relative;
@@ -256,7 +268,6 @@ nav #btn-menu {
   content: '';
   top: 0;
   left: 0;
-  z-index: 10;
   width: 100%;
   height: 100%;
   display: block;
@@ -292,4 +303,62 @@ nav #btn-menu {
 #caption1,
 #caption3 {
   width: 600px;
+}
+/*--------------graphics--------------*/
+.margin-top {
+  margin-top: 50px;
+}
+.graphic-container {
+  border: solid 5px #f8e3ee;
+  background-color: #ffffff;
+  padding: 20px;
+  /*
+	.skewX(7deg);
+	img {.skewX(-7deg);}
+	p{.skewX(-7deg);}
+
+	@media (max-width:992px){
+	.skewX(0deg);
+	img {.skewX(0deg);}	
+	p {.skewX(0deg);}
+	*/
+}
+#read-more {
+  cursor: pointer;
+  font-style: italic;
+}
+.portfolio-container {
+  border: solid 5px #f8e3ee;
+  background-color: #ffffff;
+  padding: 20px;
+  /*
+	.skewX(7deg);
+	img {.skewX(-7deg);}
+	p{.skewX(-7deg);}
+
+	@media (max-width:992px){
+	.skewX(0deg);
+	img {.skewX(0deg);}	
+	p {.skewX(0deg);}
+	*/
+  padding-top: 0;
+  overflow: hidden;
+}
+.portfolio-container img {
+  margin: 20px 0;
+}
+.commercial:after {
+  content: 'commercial';
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 30px;
+  padding-left: 20px;
+  top: 0;
+  left: -20px;
+  width: 150px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background: #ce418c;
+  transform: rotate(-30deg);
 }
