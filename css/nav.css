@@ -1,0 +1,216 @@
+/* colors 
+#C40CAA -red violet
+#CE418C- pink violet
+#F6BF37- orange
+#7286A0 - light slate gray
+#EEB4B3 -melon
+*/
+html,
+body {
+  max-width: 1366px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444444;
+}
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 84px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 34px;
+  line-height: 34px;
+}
+p {
+  font-size: 24px;
+  line-height: 24px;
+  color: #444444;
+}
+a {
+  font-size: 24px;
+  color: #ffffff;
+}
+.btn:focus,
+.btn:active {
+  outline: none!important;
+  border: 2px solid gray;
+}
+/* ---------------navbar-----------------------*/
+nav {
+  display: none;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  nav {
+    display: block;
+  }
+}
+nav:after {
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  -ms-transform: skewY(-3deg);
+  /* IE 9  */
+  -webkit-transform: skewY(-3deg);
+  /* Safari */
+  transform: skewY(-3deg);
+  /* Standard syntax */
+  z-index: 10;
+}
+@media (max-width: 780px) {
+  nav:after {
+    background-color: transparent;
+  }
+}
+nav h1 {
+  font-size: 44px;
+  color: #444444;
+  margin: 0;
+}
+nav h1 span {
+  display: block;
+  font-size: 20px;
+  /*font-size 24pc , 3,5 razy różnicy */
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  float: right;
+  list-style-type: none;
+}
+@media (max-width: 780px) {
+  nav ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 50px 0;
+    z-index: 30;
+    height: 300px;
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 0 5px 5px #444;
+  }
+}
+@media (max-width: 260px) {
+  nav ul {
+    top: 120px;
+  }
+}
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  padding: 10px 30px;
+}
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    line-height: 30px;
+  }
+}
+nav ul li a {
+  color: #444444;
+}
+nav ul li a:hover {
+  color: #ce418c;
+  text-decoration: none;
+  text-shadow: #ffffff -1px 0px 2px;
+  -webkit-font-smoothing: antialiased;
+}
+nav #btn-menu {
+  display: none;
+}
+@media (max-width: 780px) {
+  nav #btn-menu {
+    display: block;
+    line-height: 100px;
+    paddin: 10px 30px;
+    float: right;
+    cursor: pointer;
+  }
+}
+@media (max-width: 260px) {
+  nav #btn-menu {
+    float: right;
+    clear: both;
+  }
+}
+/* ---------------menu side-----------------------*/
+.menu-side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+.menu-side:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 90px;
+  height: 100%;
+  left: 260px;
+  top: 0;
+  background-color: #fff;
+  -ms-transform: skewX(7deg);
+  /* IE 9  */
+  -webkit-transform: skewX(7deg);
+  /* Safari */
+  transform: skewX(7deg);
+  /* Standard syntax */
+}
+.menu-side ul {
+  position: absolute;
+  padding: 0;
+  bottom: 50%;
+  left: 40px;
+}
+.menu-side ul li {
+  list-style-type: none;
+}
+.menu-side ul li a {
+  font-size: 44px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #444444;
+}
+.menu-side ul li a:hover {
+  color: #CE418C;
+  text-shadow: #ffffff -1px 0px 2px;
+  -webkit-font-smoothing: antialiased;
+}
+.menu-side h1 a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 50px 40px;
+  font-size: 84px;
+  color: #444444;
+  text-decoration: none;
+  z-index: 20;
+}
+.menu-side h1 a:hover {
+  color: 'Roboto Slab', serif;
+  cursor: pointer;
+}
+.menu-side h1 a span {
+  display: block;
+  font-size: 24px;
+  color: #444444;
+}
+@media (max-width: 992px) {
+  .menu-side {
+    display: none;
+  }
+}
+.active a {
+  color: #e392bd !important;
+}
