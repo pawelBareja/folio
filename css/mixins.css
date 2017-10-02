@@ -1,0 +1,4 @@
+.darken {
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
