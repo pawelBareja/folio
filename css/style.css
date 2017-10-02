@@ -36,6 +36,10 @@ a {
   outline: none!important;
   border: 2px solid gray;
 }
+.darken {
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
 /* ---------------navbar-----------------------*/
 nav {
   display: none;
@@ -213,10 +217,6 @@ nav #btn-menu {
 }
 .active a {
   color: #e392bd !important;
-}
-.darken {
-  filter: brightness(0.7);
-  -webkit-filter: brightness(0.7);
 }
 .footer {
   margin-top: 50px;
