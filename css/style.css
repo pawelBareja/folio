@@ -36,10 +36,6 @@ a {
   outline: none!important;
   border: 2px solid gray;
 }
-.darken {
-  filter: brightness(0.7);
-  -webkit-filter: brightness(0.7);
-}
 /* ---------------navbar-----------------------*/
 nav {
   display: none;
@@ -218,6 +214,10 @@ nav #btn-menu {
 .active a {
   color: #e392bd !important;
 }
+.darken {
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
 .footer {
   margin-top: 50px;
   padding-bottom: 50px;
@@ -271,6 +271,16 @@ nav #btn-menu {
   display: none;
 }
 /*----------text on image-----------------*/
+@media (min-width: 1200px) {
+  .padding-left {
+    padding-left: 0;
+  }
+}
+@media (min-width: 764px) and (max-width: 992px) {
+  .padding-left {
+    padding-left: 0;
+  }
+}
 .img-container {
   position: relative;
   text-align: right;
