@@ -393,6 +393,16 @@ nav #btn-menu {
 .portfolio-container img {
   margin: 20px 0;
 }
+.portfolio-container p {
+  height: 50px;
+}
+@media (max-width: 576px) {
+  .portfolio-container p {
+    font-size: 14px;
+    line-height: 14px;
+    height: 30px;
+  }
+}
 .commercial:after {
   content: 'komercyjne';
   font-size: 14px;

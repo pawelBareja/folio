@@ -175,10 +175,21 @@
 	.graphic-container;
 	padding-top:0;
 	overflow:hidden;
-	
 
 	img {
 		margin:20px 0;
+	}
+	
+	p {
+	
+		height: 50px;
+		
+		@media (max-width:576px){
+			font-size: @font-size - 10px;
+			line-height: @font-size - 10px;
+			height: 30px;
+			
+		}
 	}
 
 }
