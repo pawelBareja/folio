@@ -52,6 +52,14 @@ nav {
     display: block;
   }
 }
+@media (min-width: 1600px) {
+  nav {
+    display: block;
+  }
+  nav:after {
+    display: none !important;
+  }
+}
 nav:after {
   display: block;
   position: absolute;
@@ -214,6 +222,11 @@ nav #btn-menu {
   color: #444444;
 }
 @media (max-width: 992px) {
+  .menu-side {
+    display: none;
+  }
+}
+@media (min-width: 1600px) {
   .menu-side {
     display: none;
   }
