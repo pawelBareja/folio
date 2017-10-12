@@ -246,15 +246,23 @@
 /*-----kontakt------*/
 .contact {
 	margin:40px 0;
+	font-size:@font-size + 20;
+	line-height:@font-size + 20;
+	
 
-	h3{
-		color:@font-color;
+	
+	i {
+		float:left;
+		margin-right:20px;
+	}
+
+	p { 
 		font-size:@font-size + 20;
-		text-decoration:none;
+		line-height:@font-size + 20;
 		
 		a{
-			color:@font-color;
 			font-size:@font-size + 20;
+			color:@font-color;
 			text-decoration:none;
 			
 			&:hover {
@@ -263,6 +271,30 @@
 		}
 	}
 
+
+	@media (max-width:600px){
+	
+		i {
+			display: block;
+			text-align: center;
+			float: none;
+			margin:0;
+		
+		}
+		p { 
+			font-size:@font-size;
+			line-height:@font-size;	
+			display: block;
+			text-align: center;
+			float: none;
+			
+			a{
+				font-size:@font-size;
+			}
+			
+		}
+
+	}	
 }
 
 .bg {
