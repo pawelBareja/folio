@@ -16,7 +16,7 @@
 			
   });
     
-/* read more button*/   
+/* read more button
 addEventListener("DOMContentLoaded",function(){
 
 var trigger = document.getElementById('read-more');
@@ -38,8 +38,7 @@ trigger.addEventListener('click',unwrap);
 }
 
 });
-
-
+*/
 
 
   
