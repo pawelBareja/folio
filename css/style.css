@@ -262,6 +262,9 @@ nav #btn-menu {
     overflow: hidden;
   }
 }
+.content-main .row {
+  margin: 0;
+}
 .sub-page-content {
   height: 100%;
   padding: 0 5% 0 10%;
@@ -370,10 +373,8 @@ nav #btn-menu {
     line-height: 4.5vw;
   }
 }
-.img-container .img-caption p a {
+.img-container .img-caption p {
   font-size: 18px;
-}
-.img-container .img-caption p a:hover {
   color: #ffffff;
 }
 /*--------------graphics--------------*/
